@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asets/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+
+    <link rel="stylesheet" href="./asets/css/style.css">
+    <title>Travel Paradise</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="./imges/Travel Paradise logo.png" alt="site logo" ></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="Travel-nav-link nav-link active" aria-current="page"  href="#Search">Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="Travel-nav-link nav-link" href="#Services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="Travel-nav-link nav-link" href="#Recommended">Recommendes</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="Travel-nav-link nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Content
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#slider">Slider</a></li>
+                  <li><a class="dropdown-item" href="#video">Video</a></li>
+                  <li><a class="dropdown-item" href="#google">Our website on Google</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- nav bar end--------------------------------------------------------------------------------------------------------------------->
+    
+      <!-- Search and classification------------------------------------------------------------------------------------------------------->
+      <div id="Search" class="hero" >
+        <div class="container">
+          <div class="bg">
+            <h3>Travel Paradise</h3>
+          </div>
+          <form action="index.html" method="get" class="Search-form">
+            <div class="form-groub" style="flex:100%;">
+               <i class="fa fa-map-marker"></i> 
+              <input type="text" class="form-control" name="city" placeholder="Type your destination "></div>
+            <div class="form-groub"><i class="fa fa-calendar"></i><input type="text"placeholder="Check In" class="form-control" id="inputcheckin"></div>
+            <div class="form-groub"><i class="fa fa-calendar"></i><input type="text" placeholder="Check Out" class="form-control" id="inputcheckOut"></div>
+            <div class="form-groub"><i class="fa fa-bed"></i><select class="form-control">
+              <option hidden value="Rooms">Rooms</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+
+
+            </select></div>
+            <div class="form-groub"><i class="fa fa-user"></i><select class="form-control">
+              <option hidden value="Rooms">Adults</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+
+
+            </select></div>
+            <div class="form-groub"><i class="fa fa-user"></i><select class="form-control">
+              <option hidden value="Rooms">children</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+           </select>
+        </div>   
+        <div class="form-groub">
+          <button type="reset" class="btn">Check</button>
+        </div>
+       
+       <p class="need-help">Need help? You'll find answers to most common questions in our Help Center.
+        <a href="#">Need help</a>
+       </p>
+          </form>
+        </div>
+
+      </div>
+      </form>
+      <!-- ......................................................................................................... -->
+      <button class="btn btn-offcanvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Get your offer</button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Offers and discounts:</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>1- Get 15% off your next trip with code “OFF15. <br>
+      2- Discover the magic of the Maldives with our all-inclusive package at 20% discount. <br>
+      3- Enjoy a special vacation in Dubai with a 10% discount on our luxury hotels.
+    </p>
+    <h5 class="offcanvas-title">Contact Information:</h5>
+    <h6 class="offcanvas-title">phone number:</h6>
+    <p>+971 4 321 1234 <br>
+      +1 234 567 8901
+    </p>
+  </div>
+</div>
+
+      <!-- Subscribers start.......................................................................................... -->
+     
+      <section class="section-color">
+        <div class="container text-center">
+          <h2 class="section-title">We are here to help you</h2>
+          <p class="section-subtitle">subscribe to get our news letters</p>
+          <a href="#" class="btn btn-white">subscribe news letters</a>
+
+        </div>
+      </section>
+ <!-- Subscribers end.......................................................................................... -->
+
+      <!-- Services start.......................................................................................................... -->
+
+      <section id="Services">
+        <svg xmls="http://www.w3.org/2000/svg" viewBox="0 0 100 100"preserveAspectRatio="none" class="section-down-arrow">
+          <polygon fill="var(--color-primary)"points="0,0 100,0 50,50"></polygon>
+        </svg>
+
+      <div class="container">
+        <div class="row">
+          <article class="article col-lg-4">
+            <i class="fa fa-hotel article-icon"></i>
+            <h3 class="article-title">Find your dream hotel</h3>
+            <p>Enjoy a unique accommodation experience in luxury hotels at reasonable prices.</p>
+            <a href="#" class="btn btn-primaty btn-fite" >Continue reading</a>
+          
+          </article>
+          <article class="article col-lg-4">
+            <i class="fa fa-plane article-icon"></i>
+            <h3 class="article-title">Air Flights</h3>
+            <p>Plan your perfect trip with flexible options that fit your budget and needs.</p>
+            <a href="#" class="btn btn-primaty btn-fite" >Continue reading</a>
+
+          </article>
+          <article class="article col-lg-4">
+            <i class="fa fa-suitcase article-icon"></i>
+            <h3 class="article-title">Activities and trips</h3>
+            <p>Discover new attractions and live unforgettable adventures.</p>
+            <a href="#" class="btn btn-primaty btn-fite" >Continue reading</a>
+          </article>
+        </div>
+      </div>
+      </section>
+
+
+      <!-- slider start......................................................................................... -->
+
+      <section id="slider" class="section-gray" >
+        <div class="container" >
+          <div class="row">
+            <div class="col-lg 7">
+              <div class="level-slider">
+                <div class="article level-slider-item">
+                  <img src="./imges/2.png" alt="picture">
+                  <div class="level-slider-item-container"> 
+                    <h3>Travel Paradise in New York </h3>
+                    <p>Enjoy the big city spirit of New York with its famous landmarks like </p>
+                    <a href=""class="btn btn-primaty btn-fite" >Get more info</a>
+                  </div>
+                </div>
+                <div class="article level-slider-item">
+                  <img src="./imges/1.png" alt="picture">
+                  <div class="level-slider-item-container">
+                    <h3>Travel Paradise in Italy
+                    </h3>
+                    <p>Enjoy delicious cuisine and ancient history in Rome
+                      Discover the beauty</p>
+                    <a href=""class="btn btn-primaty btn-fite" >Show details </a>
+                  </div>
+                </div>
+                <div class="article level-slider-item">
+                  <img src="./imges/3.png" alt="picture">
+                  <div class="level-slider-item-container">
+                    <h3>Travel Paradise in Germany</h3>
+                    <p>Enjoy festivals and art fairs in Berlin
+                      Explore the castles and charming villages .</p>
+                    <a href=""class="btn btn-primaty btn-fite" >Show more</a>
+                  </div>
+                </div>
+                <div class="article level-slider-item">
+                  <img src="./imges/4.png" alt="picture">
+                  <div class="level-slider-item-container">
+                    <h3>Travel Paradise in Spain</h3>
+                    <p>Enjoy the beauty of Spanish culture in Barcelona and Madrid.Discover ancient.</p>
+                    <a href=""class="btn btn-primaty btn-fite" >Show details</a>
+                  </div>
+                </div>
+                <div class="article level-slider-item">
+                  <img src="./imges/5.png" alt="picture">
+                  <div class="level-slider-item-container">
+                    <h3>Travel Paradise in Holland
+                    </h3>
+                    <p>“Enjoy a cruise through the canals in Amsterdam and explore its stunning.</p>
+                    <a href=""class="btn btn-primaty btn-fite" >Get more info</a>
+                  </div>
+                </div>
+                <div class="article level-slider-item">
+                  <img src="./imges/6.png" alt="picture">
+                  <div class="level-slider-item-container">
+                    <h3>Travel Paradise in Paris</h3>
+                    <p>Enjoy the beauty of the Eiffel Tower and Louvre in Paris.
+                      Wander.</p>
+                    <a href=""class="btn btn-primaty btn-fite" >Show more</a>
+                  </div>
+                </div>
+              
+
+            </div> 
+            <!-- star-places....................................................... -->
+            <div  id="Recommended" class="col-lg 4">
+              <div class="star-places">
+                <div class="star-places-headar" >
+                  <h3>Recommended Places</h3>
+                  <p>Places that we recommend for you</p>
+                </div>
+                <div class="star-places-body ">
+                  <a href="#">
+                    <img src="./imges/Europe.png" alt="Europe">
+                    <img src=".//imges/London1.png" alt="Europe">
+                    <img src="./imges/London2.png" alt="Europe">
+                    <h4>Europe</h4>
+                  </a>
+                  <a href="#">
+                    <img src="./imges/Asia.png" alt="Asia">
+                    <img src="./imges/asia1.png" alt="Asia">
+                    <img src="./imges/asia2.png" alt="Asia">
+
+                    <h4>Asia</h4>
+                  </a>
+                  <a href="#">
+                    <img src="./imges/Africa.png" alt="Africa">
+                    <img src="./imges/Africa1.png" alt="Africa">
+                    <img src="./imges/Africa2.png" alt="Africa">
+
+                    <h4>Africa</h4>
+                  </a>
+                    <a href="#">
+                    <img src="./imges/America.png" alt="America">
+                    <img src="./imges/America1.png" alt="America">
+                    <img src="./imges/America2.png" alt="America">
+                    <h4>America</h4>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          
+            
+          </div>
+
+        </div>
+        
+      </section>
+
+      <!-- video---------------------------------------------------------------------------------------- -->
+      <section id="video" class="video">
+     
+        <div class="video-container" >
+          <video controls class="level-video">
+            <source src="./imges/Purple Simple and Minimalist Travel Youtube Intro (1).mp4" type="video/mp4">
+            <source src="./imges/Purple Simple and Minimalist Travel Youtube Intro (1).mp4" type="video/ogg">
+            Your browser does not support video
+
+          </video>
+        </div>
+      </section>
+      <!-- contact...................................................................................................................... -->
+
+      <div id="google" class="container">
+        <div class="row">
+          <div class="col-lg-6">       
+            <!-- google maps.................. -->
+            <iframe class="map-container" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1358.6828773047807!2d36.290697140315416!3d33.52215525673318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2s!4v1713937310733!5m2!1sar!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-lg-6">
+            <form action="" class="contact-form">
+              <div class="form-groub">
+                <input type="text" name="" id="" class="form-control" placeholder="Name" required>
+                <i class="fa fa-user"></i>
+              </div>
+    
+    
+              <div class="form-groub">
+                <input type="text" name="" id="" class="form-control" placeholder="Email" required>
+                <i class="fa fa-envelope"></i>
+              
+              </div>
+              <div class="form-groub">
+                <input type="text" name="" id="" class="form-control" placeholder="Subject" required>
+                <i class="fa fa-book"></i>
+              </div>
+    
+    
+              <div class="form-groub">
+                <textarea type="text" name="" id="" class="form-control" rows="9" placeholder="Message" required></textarea>
+                <i class="fa fa-commenting"></i>
+              </div>
+    
+              <div class="button-container">
+                <button type="submit" class="btn btn-primaty">Send a message now</button>
+                <button type="reset" class="btn btn-primaty1">Reset</button>
+              </div>
+    
+            </form>
+          </div>
+        </div>
+
+
+      </div>
+                  <!-- footer......................................................................... -->
+
+                  <footer class="footer">
+                    <div class="container">
+                      <p>Copyrights &copy; 2024  Travel Paradise Design: <span>Karam jabr</span> </p>
+                    </div>
+
+                  </footer>
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./asets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./asets/js/mine.js"></script>
+</body>
+</html>
